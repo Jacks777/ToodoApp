@@ -1,0 +1,3 @@
+BASIC: #546b75
+
+HOVER: #5a93ab

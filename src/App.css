@@ -1,0 +1,289 @@
+.app {
+  height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden !important;
+}
+
+.lander {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  gap: 3vh;
+
+  animation: landing 2s cubic-bezier(0.2, -0.24, 0.88, 1.35);
+}
+
+@keyframes landing {
+  0%,
+  10% {
+    transform: scale(1);
+  }
+  65% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.lander img {
+  height: 5em;
+}
+
+.lander h1 {
+  color: #546b75;
+}
+
+.container_tasks {
+  display: none;
+  justify-content: center;
+  width: 100vw;
+  height: 100%;
+}
+
+.container_tasks-inner {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container_tasks-top {
+  margin-top: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container_tasks-top h1 {
+  color: #546b75;
+  font-size: 2.6em;
+}
+.container_tasks-top img {
+  height: 2.6em;
+  transition: 0.3s all;
+}
+.container_tasks-top img:hover {
+  cursor: pointer;
+  background-color: #5a93ab;
+  border-radius: 6px;
+}
+
+.tasks_display {
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+  margin-top: 15%;
+
+  flex: 1;
+}
+
+.task_dateEdit {
+  display: flex;
+  justify-content: space-between;
+  z-index: 20;
+}
+
+.editFunction {
+  font-weight: 400;
+}
+
+.task {
+  position: relative;
+  border: 1px solid #546b75;
+  border-radius: 6px;
+  padding: 3% 0%;
+  width: 100%;
+  display: flex;
+  transition: 0.3s all;
+  cursor: grab;
+}
+
+.important {
+  border: 1px solid #5a93ab;
+  background-color: #5a93ab3d;
+}
+
+.task div {
+  flex: 1;
+}
+
+.task .check {
+  position: absolute;
+  right: 3%;
+}
+
+.task .trash {
+  position: absolute;
+  right: 12%;
+  /* top: 10vw; */
+  transition: 0.3s all;
+}
+.task .trash:hover,
+.task .trash:focus {
+  background-color: #5a93ab;
+}
+
+/* .task:hover {
+  border: 1px solid #5a93ab;
+  background-color: #eee;
+} */
+
+.task h4 {
+  margin: 0 5%;
+  font-size: 1em;
+  font-weight: bold;
+  color: #546b75;
+}
+
+.taskActive {
+  margin-right: 20% !important;
+}
+
+.task p {
+  margin: 5% 5% 0% 5%;
+  font-size: 0.8em;
+  font-weight: light;
+  color: #546b75;
+}
+
+.container_tasks-end {
+  position: relative;
+  display: flex;
+  margin-bottom: 15%;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.container_tasks-end img {
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  padding: 2.5%;
+  background-color: #546b75;
+  height: 3em;
+  border-radius: 4px;
+  transition: 0.3s all;
+  width: 15vw;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.container_tasks-end img:hover {
+  background-color: #5a93ab !important;
+}
+
+.activeButton {
+  width: 100% !important;
+}
+
+.container_addTask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100%;
+  transform: translateY(-100vh);
+  transition: 0.4s all;
+  background-color: white;
+}
+
+.container_addTask-inner {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container_addTask-top {
+  margin-top: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container_addTask-top h1 {
+  color: #546b75;
+  font-size: 2.6em;
+}
+.container_addTask-top img {
+  height: 2.6em;
+  transition: 0.3s all;
+}
+.container_addTask-top img:hover {
+  cursor: pointer;
+  background-color: #5a93ab;
+  border-radius: 6px;
+}
+
+.active {
+  transform: translateY(0px);
+}
+
+.addTask_display {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15%;
+
+  flex: 1;
+}
+
+.addTask_display form {
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+  height: 100%;
+}
+
+.addTask_display form .textbox,
+.addTask_display form .datePicker {
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid #546b75;
+  border-radius: 6px;
+  padding: 3% 5%;
+  width: 100% !important;
+  display: flex;
+  transition: 0.3s all;
+  font-size: 1em;
+}
+
+.textbox {
+  width: 100%;
+  padding: 3% 5% 20% 5% !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+}
+
+.react-datepicker-wrapper {
+  display: block !important;
+}
+
+.danger {
+  border: 1px solid rgb(146, 40, 40) !important;
+}
+
+.danger::placeholder {
+  color: rgb(146, 40, 40) !important;
+}
+
+.important_box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.important_box h5 {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #546b75;
+}
+
+.important_box .checkBox {
+  width: 5vw;
+  height: 5vw;
+  cursor: pointer;
+}
