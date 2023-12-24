@@ -23,9 +23,8 @@ Toodo App is a task management application built with React and Firebase Realtim
 
 ## Screenshots
 
-![Screenshot 1](https://github.com/Jacks777/ToodoApp/blob/main/public/assets/mockup/mockup1.png)
-![Screenshot 1](https://github.com/Jacks777/ToodoApp/blob/main/public/assets/mockup/mockup2.png)
-![Screenshot 1](https://github.com/Jacks777/ToodoApp/blob/main/public/assets/mockup/mockup3.png)
+| ![Screenshot 1](https://github.com/Jacks777/ToodoApp/blob/main/public/assets/mockup/mockup1.png) | ![Screenshot 2](https://github.com/Jacks777/ToodoApp/blob/main/public/assets/mockup/mockup2.png) | ![Screenshot 3](https://github.com/Jacks777/ToodoApp/blob/main/public/assets/mockup/mockup3.png) |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
 
 ## Getting Started
 
