@@ -23,7 +23,9 @@ Toodo App is a task management application built with React and Firebase Realtim
 
 ## Screenshots
 
-![Screenshot 1](screenshots/screenshot1.png)
+![Screenshot 1](https://github.com/Jacks777/ToodoApp/blob/main/public/assets/mockup/mockup1.png)
+![Screenshot 1](https://github.com/Jacks777/ToodoApp/blob/main/public/assets/mockup/mockup2.png)
+![Screenshot 1](https://github.com/Jacks777/ToodoApp/blob/main/public/assets/mockup/mockup3.png)
 
 ## Getting Started
 
@@ -43,8 +45,10 @@ Make sure you have the following installed:
    git clone https://github.com/yourusername/ToodoApp.git
    cd ToodoApp
    npm install
+   ```
 
 ### Firebase Configuration
+
 To connect your app to Firebase, follow these steps:
 
 Create a new project on the Firebase Console.
@@ -54,6 +58,7 @@ Under "Your apps," click on the web app icon (</>).
 Copy the Firebase configuration.
 
 #### Create a .env file in the project root and add your Firebase configuration:
+
 REACT_APP_FIREBASE_API_KEY=your_api_key
 REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
 REACT_APP_FIREBASE_PROJECT_ID=your_project_id
@@ -63,6 +68,7 @@ REACT_APP_FIREBASE_APP_ID=your_app_id
 REACT_APP_FIREBASE_DATABASE_URL=your_database_url
 
 #### Run the app:
+
 npm start
 The app will be available at http://localhost:3000.
 
